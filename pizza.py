@@ -7,7 +7,7 @@ tipos_masa = ["tradicional", "delgada"]
 
 class Pizza:
     precio = 10000      #atributo de clase
-    tamaño = "Familiar" #atributo de clase
+    tamano = "Familiar" #atributo de clase
 
     @staticmethod  # metodo estatico  no crea objeto de clase
     def validar(texto:str,casos_posibles:list):  #valida texto en lista de casos posibles
