@@ -27,13 +27,13 @@ class Pizza:
         self.ingrediente_proteico = input(f"Ingrese el ingrediente proteico ({ingredientes_proteicos})").lower()
         es_proteico_valido =Pizza.validar(self.ingrediente_proteico,ingredientes_proteicos)
 
-        self.ingrediente_vegetal1 = input("Ingrese el primer ingrediente vegetal: ").lower()
+        self.ingrediente_vegetal1 = input(f"Ingrese el primer ingrediente vegetal ({ingredientes_vegetales}): ").lower()
         es_vegetal1_valido =Pizza.validar(self.ingrediente_vegetal1,ingredientes_vegetales)
 
-        self.ingrediente_vegetal2 = input("Ingrese el segundo ingrediente vegetal: ").lower()
+        self.ingrediente_vegetal2 = input(f"Ingrese el segundo ingrediente vegetal({ingredientes_vegetales}): ").lower()
         es_vegetal2_valido =Pizza.validar(self.ingrediente_vegetal2,ingredientes_vegetales)
 
-        self.tipo_masa = input("Ingrese el tipo de masa (tradicional, delgada): ").lower()
+        self.tipo_masa = input(f"Ingrese el tipo de masa ({tipos_masa}): ").lower()
         es_masa_valido =Pizza.validar(self.tipo_masa,tipos_masa)
 
         if es_proteico_valido == True and es_vegetal1_valido == True and es_vegetal2_valido == True and es_masa_valido == True:

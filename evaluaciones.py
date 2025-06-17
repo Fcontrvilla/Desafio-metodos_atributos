@@ -23,4 +23,5 @@ print(f"Segundo ingrediente vegetal: {mi_pizza.ingrediente_vegetal2}")
 print(f"Tipo de masa: {mi_pizza.tipo_masa}")
 print(f"¿Es una pizza válida? {mi_pizza.es_pizza_valida}")
 
-# mostrar si es valida sin crear instancia 
+# mostrar si es valida sin crear instancia no se puede leer atributo si objeto no esta creado
+print(f"¿La clase Pizza es una pizza válida? {Pizza.es_pizza_valida}")
